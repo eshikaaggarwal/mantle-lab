@@ -3,7 +3,7 @@
   <div>
     <h2 class="text-2xl font-semibold mb-4">Task List</h2>
     <ul>
-      <li v-for="task in tasks" :key="task.id" class="mb-2 p-2 bg-white dark:bg-gray-700 shadow-md rounded-md">
+      <h4 v-for="task in tasks" :key="task.id" class="mb-2 p-2 bg-white dark:bg-gray-700 shadow-md rounded-md">
         <div class="flex justify-between items-center">
           <div>
             <h3 class="text-lg font-semibold">{{ task.title }}</h3>
@@ -14,7 +14,7 @@
             <button @click="deleteTask(task)" class="text-red-500">Delete</button>
           </div>
         </div>
-      </li>
+      </h4>
     </ul>
   </div>
 </template>
